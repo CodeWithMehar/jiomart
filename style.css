@@ -1,0 +1,334 @@
+.header2 {
+  background-color: #343a40; /* Replace with your desired background color */
+}
+
+.header2 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header2 li {
+  position: relative;
+  padding: 15px;
+  color: white;
+}
+
+.header2 .menu, .header2 .menu1 {
+  display: none; /* Initially hide the dropdowns */
+  position: absolute;
+  background: #495057; /* Dropdown background color */
+  z-index: 1000;
+  width: 200px; /* Fixed width for dropdown */
+  border-radius: 5px;
+}
+
+.header2 li:hover .menu, .header2 li:hover .menu1 {
+  display: block; /* Show dropdown on hover */
+}
+
+.header2 .menu ul {
+  padding: 10px;
+}
+.header1 {
+  background-color: #0078ad;
+  padding: 25px 0px;
+}
+.wishlist {
+  background-color: #f8f9fa; /* Background color for the wishlist */
+  padding: 20px 0; /* Padding for spacing */
+}
+
+.wishlist-img {
+  position: relative; /* To position child elements */
+}
+
+.time {
+  display: flex; /* Flex layout for the timer */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center align items vertically */
+}
+
+.time div {
+  margin: 0 10px; /* Spacing between time elements */
+  font-size: 24px; /* Font size for timer */
+  font-weight: bold; /* Bold text for emphasis */
+  color: #343a40; /* Dark color for the timer text */
+}
+.map {
+  display: flex;
+  gap: 5px;
+  margin-left: 30px;
+  align-items: center;
+  padding: 4px 5px;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.map h6 {
+  padding-top: 6px;
+}
+.map:hover {
+  cursor: pointer;
+  background-color: #0c5273;
+}
+.input {
+  background-color: #0c5273;
+  border-radius: 30px;
+  padding: 6px 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-left: 30px;
+  width: 50%;
+}
+.input input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+}
+.input input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+.list {
+  margin-left: 50%;
+  font-size: 18px;
+}
+.cart {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 0px 15px;
+  border-radius: 50%;
+}
+.cart:hover {
+  background-color: #0c5273;
+}
+.user {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 8px;
+  margin-left: 6px;
+  border-radius: 30px;
+  padding: 0px 2px;
+}
+.user:hover {
+  background-color: #0c5273;
+}
+.user img {
+  width: 25px;
+}
+.user h6 {
+  font-weight: bold;
+  padding-top: 5px;
+}
+/* header-section css completed */
+
+.header2 {
+  background-color: #0c5273;
+  color: white;
+  padding: 10px 0px;
+  position: relative;
+}
+.header2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header2 ul li {
+  list-style: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.menu {
+  width: 200px;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 70px;
+  top: 100%;
+  display: none;
+  transition: 0.5s;
+  background-color: white;
+  color: black;
+  z-index: 100;
+}
+.header2 ul li:hover .menu {
+  display: block;
+  
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.menu ul li {
+  list-style: none;
+  line-height: 40px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.menu1 {
+  width: 300px;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 70px;
+  top: 100%;
+  display: none;
+  transition: 0.5s;
+  background-color: white;
+  color: black;
+  z-index: 100;
+}
+.header2 ul li:hover .menu1 {
+  display: block;
+  
+}
+.menu1 ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.menu1 ul li {
+  list-style: none;
+  line-height: 40px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.wishlist {
+  background-color: #72ae2e;
+}
+.wishlist-img {
+  height: 35vh;
+  background-image: url("img/img1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.time {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+.days,
+.hours,
+.mins,
+.secs {
+  background-color: white;
+  color: red;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.item {
+  margin-top: 40px;
+  padding-left: 10px;
+}
+.item img {
+  border-radius: 10px;
+}
+#slider1 dots {
+  width: 50%;
+}
+#slider1 .active span {
+  width: 50px;
+  background-color: red;
+}
+#slider2 .active span {
+  width: 50px;
+  background-color: red;
+}
+#slider3 .active span {
+  width: 50px;
+  background-color: red;
+}
+.off {
+  display: flex;
+  gap: 5px;
+}
+.G-img {
+  display: flex;
+  justify-content: space-around;
+}
+.G-img i {
+  font-size: 23px;
+  font-weight: lighter;
+}
+.off-btn {
+  margin-bottom: 8px;
+  background-color: rgb(229, 247, 238);
+  color: rgb(3, 117, 60);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 12px;
+  font-weight: bolder;
+}
+.G-btn {
+  margin: 10px 0px;
+  width: 100%;
+  background-color: transparent;
+  color: #0c5273;
+  border-radius: 30px;
+  padding: 5px 10px;
+  border: 0.5px solid #ccc;
+}
+
+.sec-4 img {
+  margin: 30px 0px;
+  border-radius: 20px;
+  width: 100%;
+  height: 35vh;
+}
+.s-img img {
+  margin: 10px 0px;
+  width: 80%;
+  height: 250px;
+  border-radius: 20px;
+}
+.b-img img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+.shop-img img {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.video video {
+  border-radius: 20px;
+  width: 100%;
+}
+.f-img img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100px;
+}
+.store-img img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.h-img img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.c-img img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.footer {
+  background-color: #b4b2b2;
+  padding: 40px 0px;
+  color: white;
+}
